@@ -1,28 +1,45 @@
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.trello-container {
+  margin: 100px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.trello-header {
+  flex: 1;
+  height: 50px;
+  background-color: #999;
 }
 
-.App-title {
-  font-size: 1.5em;
+.trello-board {
+  flex: 5;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
-.App-intro {
-  font-size: large;
+.trello-section {
+  border: 1px solid #aaa;
+  width: 100px;
+  flex: 1;
+  margin: 15px 0;
+  margin-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.trello-section:first-of-type {
+  margin-left: 15px;
 }
+
+
+
+
