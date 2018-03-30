@@ -24,22 +24,37 @@
 .trello-board {
   flex: 5;
   display: flex;
+  flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
 }
 
 .trello-section {
   border: 1px solid #aaa;
-  width: 100px;
   flex: 1;
-  margin: 15px 0;
-  margin-right: 15px;
+  margin: 0 15px 15px 15px;
 }
 
 .trello-section:first-of-type {
-  margin-left: 15px;
+  margin: 15px;
 }
 
+@media only screen and (max-width: 400px) {
 
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+@media only screen and (min-width: 961px) {
+  .trello-board {
+    flex-direction: row;
+  }
+
+  .trello-section {
+    margin: 15px 15px 15px 0px;
+  }
+}
 
 
