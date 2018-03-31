@@ -10,7 +10,6 @@
 .trello-container {
   margin: 0 auto;
   width: 100%;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -30,14 +29,66 @@
 }
 
 .trello-section {
-  border: 1px solid #aaa;
   flex: 1;
   margin: 0 15px 15px 15px;
+  border: 1px solid #888;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .trello-section:first-of-type {
   margin: 15px;
 }
+
+.section-header {
+  height: 75px;
+  text-align: center;
+  padding-top: 25px;
+  color: #eee;
+}
+
+.section-input-container {
+  display: flex;
+  border-top: 1px solid #aaa;
+  margin-top: auto;
+  padding-left: 10px;
+}
+
+.section-input {
+  flex: 5;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+.section-input-submission {
+  flex: 1;
+  border: none;
+  border-left: 1px solid #aaa;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.section-input-submission:hover {
+  cursor: pointer;
+}
+
+.card {
+  height: 45px;
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+.card p {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+}
+
+
 
 @media only screen and (max-width: 400px) {
 
